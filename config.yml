@@ -1,0 +1,5 @@
+- name 
+lineinfile: dest=/usr/lib64/libreoffice/program/soffice
+	regexp="SAL_ENABLE_FILE_LOCKING=1"
+	insertbefore=BOF
+	line="#SAL_ENABLE_FILE_LOCKING=1"
