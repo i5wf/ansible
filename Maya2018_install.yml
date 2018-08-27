@@ -1,0 +1,4 @@
+- name: Maya2018 install
+  win_package:
+    path: \\3dd\Raid\Kollection\Soft\Autodesk_Maya_2018.3_Win64\install\Img\Setup.exe
+    arguments: /install /passive /norestart /qb /I  \\3dd\Raid\Kollection\Soft\Autodesk_Maya_2018.3_Win64\install\Img\maya2018.ini /Trial /language en-US
