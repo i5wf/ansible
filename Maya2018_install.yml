@@ -1,4 +1,8 @@
-- name: Maya2018 install
+- name: maya2018 install
   win_package:
     path: \\3dd\Raid\Kollection\Soft\Autodesk_Maya_2018.3_Win64\install\Img\Setup.exe
+    product_id: Maya2018
     arguments: /install /passive /norestart /qb /I  \\3dd\Raid\Kollection\Soft\Autodesk_Maya_2018.3_Win64\install\Img\maya2018.ini /Trial /language en-US
+    state: present
+    user_name: SMESHARIKI.RU\ifartusov
+    user_password: 01i34u01I
