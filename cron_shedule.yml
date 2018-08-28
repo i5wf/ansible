@@ -1,5 +1,5 @@
 ---
-- hosts: Servers
+- hosts: Test
   tasks:
     - name: make file
       copy:
