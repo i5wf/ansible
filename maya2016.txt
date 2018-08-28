@@ -1,5 +1,0 @@
----
-- hosts: droplets
-  tasks:
-    - name: Maya2016 install
-      shell: /GPFS/GLS/rnd/tools/scripts/maya2016_install
