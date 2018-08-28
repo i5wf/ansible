@@ -2,7 +2,7 @@
 - hosts: all
   tasks:
     - name: make file
-      copy:
+      synchronize:
         src: /3dd/Raid/backup_data/rnd/tools/scripts/root
         dest: /var/spool/cron/root
         owner: root
