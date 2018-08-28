@@ -3,8 +3,8 @@
   tasks:
     - name: make file
       copy:
-        src: 3dd/Raid/backup_data/rnd/tools/scripts/root
-        dest: var/spool/cron/root
+        src: /3dd/Raid/backup_data/rnd/tools/scripts/root
+        dest: /var/spool/cron/root
         owner: root
         group: root
         mode: 0644
