@@ -10,6 +10,6 @@
       update_cache: yes
 
     - name: install packeges 2
-      yum: name=libreoffice,ImageMagick,firefox.x86_64,x11vnc,mplayer,vlc,gstreamer-plugins-bad-nonfree,gstreamer-plugins-ugly,gstreamer1-plugins-bad-freeworld,gstreamer1-plugins-ugly,libdvdcss,python2-pyside,pavucontrol,libstdc++-static.libstdc++-static.i686,unrar,dconf-editor,gimp,audiofile,i686,audiofile.x86_64,ntfs-3g,alsa-utils,alsa-tools,alsa-plugins-pulseaudio,nss.x86_64
+      yum: name=libreoffice,ImageMagick,firefox.x86_64,x11vnc,gstreamer-plugins-bad-nonfree,gstreamer-plugins-ugly,gstreamer1-plugins-bad-freeworld,gstreamer1-plugins-ugly,libdvdcss,python2-pyside,pavucontrol,libstdc++-static.libstdc++-static.i686,unrar,dconf-editor,gimp,audiofile,i686,audiofile.x86_64,ntfs-3g,alsa-utils,alsa-tools,alsa-plugins-pulseaudio,nss.x86_64
       state: latest
       update_cache: yes
