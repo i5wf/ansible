@@ -1,0 +1,8 @@
+---
+- hosts: all
+  tasks:
+    - name: install packeges 1
+      yum: name=openssl098e,tzdata,tzdata-java,htop,openjpeg,libpng,libnpg12,mc,giflib,xorg-x11-fonts,yum-plugin-versionlock,whowatch,sshpass,centos-release-scl-rh,ipmitool,lm_sensors,smartmontools,libXp,libXmu,libXi.x86_64,libXrandr,libXcursor,compat-libtiff3,libXft,libXinerama,OpenColorIO-tools
+
+    - name: install packeges 2
+      yum: name=libreoffice,flash-plugin,ImageMagick,firefox.x86_64,nvidia-detect,x11vnc,smplayer,mplayer,vlc,gstreamer-plugins-bad-nonfree,gstreamer-plugins-ugly,gstreamer1-plugins-bad-freeworld,gstreamer1-plugins-ugly,libdvdcss,python2-pyside,pavucontrol,libstdc++-static.libstdc++-static.i686,unrar,dconf-editor,gimp,audiofile,i686,audiofile.x86_64,ntfs-3g,alsa-utils,alsa-tools,alsa-plugins-pulseaudio,nss.x86_64
