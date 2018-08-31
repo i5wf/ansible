@@ -30,9 +30,10 @@
         path: /Raid
         src: /10.10.0.56/Raid
         state: present
+        fstype: nfs
 
       mount:
         path: /Fast
         src: /10.10.0.56/Fast
         state: present
- 
+        fstype: nfs
