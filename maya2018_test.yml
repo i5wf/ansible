@@ -1,0 +1,44 @@
+---
+- hosts: all
+  tasks:
+    - name: Install maya2018
+      yum: name=Maya2018_64
+      state: latest
+
+    - name: Install adlmapps14
+      yum: name=adlmapps14
+      state: latest
+
+    - name: Install adlmflexnetclient
+      yum: name=adlmflexnetclient
+      state: latest
+
+    - name: Create license maya2018
+      copy: src=10.10.0.20:/var/opt/Autodesk/Adlm/ASR' dest=/var/opt/Autodesk/Adlm/ASR owner=root group=root mode=0644
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##file:
+##    path: /var/opt/Autodesk/Adlm/ASR
+##    src: 10.10.0.20:/var/opt/Autodesk/Adlm/ASR'
+##
+##
+##
+##
+##      copy: src=/etc/ansible/hosts dest=/etc/ansible/hosts
+##          owner=root group=root mode=0644
