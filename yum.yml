@@ -47,6 +47,6 @@
 
     - name: Create symlinks for Fast
       file:
-       src: /Raid/
-       dest: /3dd/Raid
+       src: /Fast/
+       dest: /3dd/Fast
        state: link
