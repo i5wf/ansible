@@ -20,9 +20,24 @@
       yum: name=libreoffice,ImageMagick,firefox.x86_64,x11vnc,python2-pyside,pavucontrol,libstdc++-static,libstdc++-static.i686,dconf-editor,gimp,audiofile.i686,audiofile.x86_64,ntfs-3g,alsa-utils,alsa-tools,alsa-plugins-pulseaudio,nss.x86_64
       state: latest
       update_cache: yes
-    - name: Create directoy
+    - name: Create directoy 3dd
       file:
          path: /3dd
+         state: directory
+
+    - name: Create directoy Raid
+      file:
+         path: /Raid
+         state: directory
+
+    - name: Create directoy Fast
+      file:
+         path: /Fast
+         state: directory
+
+    - name: Create directoy GPFS
+      file:
+         path: /GPFS
          state: directory
 
     - name: Mounting Raid
@@ -50,3 +65,11 @@
        src: /Fast/
        dest: /3dd/Fast
        state: link
+
+    - name: Mounting GPFS_alik
+      mount:
+        path: /GPFS
+        src: 10.10.0.62:/GPFS
+        state: present
+        fstype: nfs
+        when: $facter_hostname | regex_search('sp03*')
