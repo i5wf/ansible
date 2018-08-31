@@ -14,7 +14,7 @@
       state: latest
 
     - name: Create license maya2018
-      copy: src=10.10.0.20:/var/opt/Autodesk/Adlm/ASR' dest=/var/opt/Autodesk/Adlm/ASR owner=root group=root mode=0644
+      copy: src 10.10.0.20:/var/opt/Autodesk/Adlm/ASR' dest=/var/opt/Autodesk/Adlm/ASR owner=root group=root mode=0644
 
 
 
