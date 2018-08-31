@@ -25,13 +25,14 @@
          path: /3dd
          state: directory
 
-    - name: Mounting local resources
+    - name: Mounting Raid
       mount:
         path: /Raid
         src: /10.10.0.56/Raid
         state: present
         fstype: nfs
 
+    - name: Mounting Fast
       mount:
         path: /Fast
         src: /10.10.0.56/Fast
