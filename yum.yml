@@ -5,8 +5,10 @@
       yum: name=https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
     - name: smrepo-centos
       yum_repository:
-        name: repo
+        name: smrepo-centos
         description: smeshariki repo
+        gpgcheck: no
+        enabled: yes
         baseurl: file:///3dd/Raid/backup_data/rnd/smrepo/7/x86_64/
 
     - name: install packeges 1
