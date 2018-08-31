@@ -38,3 +38,10 @@
         src: 10.10.0.56:/Fast
         state: present
         fstype: nfs
+
+    - name: Create symlinks
+      file:
+       src: /Raid/
+       dest: /3dd/
+       state: link
+
