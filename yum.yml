@@ -3,6 +3,10 @@
   tasks:
     - name: Install repos
       yum: name=https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+    - name: smrepo-centos
+      yum_repository:
+        name: smeshariki Yum repo
+        baseurl: file:///3dd/Raid/backup_data/rnd/smrepo/7/x86_64/
 
     - name: install packeges 1
       yum: name=openssl098e,tzdata,tzdata-java,htop,openjpeg,libpng,mc,giflib,xorg-x11-fonts*,yum-plugin-versionlock,whowatch,sshpass,centos-release-scl-rh,ipmitool,lm_sensors,smartmontools,libXp,libXmu,libXi.x86_64,libXrandr,libXcursor,compat-libtiff3,libXft,libXinerama,OpenColorIO-tools
