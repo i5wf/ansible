@@ -29,7 +29,10 @@
       mount:
         path: /Raid
         src: /10.10.0.56/Raid
+        state: present
+
       mount:
         path: /Fast
         src: /10.10.0.56/Fast
+        state: present
  
