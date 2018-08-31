@@ -13,8 +13,10 @@
       yum: name=adlmflexnetclient
       state: latest
 
-    - name: Create license maya2018
-      copy: src 10.10.0.20:/var/opt/Autodesk/Adlm/ASR' dest=/var/opt/Autodesk/Adlm/ASR owner=root group=root mode=0644
+  tasks:
+    - name: Copy license file to client
+      copy: src 10.10.0.20:/var/opt/Autodesk/Adlm/ASR dest=/var/opt/Autodesk/Adlm/ASR
+            owner=root group=root mode=0755
 
 
 
@@ -22,10 +24,8 @@
 
 
 
-
-
-
-
+#    - name: Create license maya2018
+#      copy: src 10.10.0.20:/var/opt/Autodesk/Adlm/ASR' dest=/var/opt/Autodesk/Adlm/ASR owner=root group=root mode=0644
 
 
 
