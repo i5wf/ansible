@@ -39,9 +39,14 @@
         state: present
         fstype: nfs
 
-    - name: Create symlinks
+    - name: Create symlinks for Raid
       file:
        src: /Raid/
        dest: /3dd/Raid
        state: link
 
+    - name: Create symlinks for Fast
+      file:
+       src: /Raid/
+       dest: /3dd/Raid
+       state: link
