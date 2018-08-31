@@ -42,6 +42,6 @@
     - name: Create symlinks
       file:
        src: /Raid/
-       dest: /3dd/
+       dest: /3dd/Raid
        state: link
 
