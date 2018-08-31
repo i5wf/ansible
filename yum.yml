@@ -20,3 +20,16 @@
       yum: name=libreoffice,ImageMagick,firefox.x86_64,x11vnc,python2-pyside,pavucontrol,libstdc++-static,libstdc++-static.i686,dconf-editor,gimp,audiofile.i686,audiofile.x86_64,ntfs-3g,alsa-utils,alsa-tools,alsa-plugins-pulseaudio,nss.x86_64
       state: latest
       update_cache: yes
+    - name: Create directoy
+      file:
+         path: /3dd
+         state: directory
+
+    - name: Mounting local resources
+      mount:
+        path: /Raid
+        src: /10.10.0.56/Raid
+      mount:
+        path: /Fast
+        src: /10.10.0.56/Fast
+ 
