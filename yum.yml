@@ -25,14 +25,14 @@
       mount:
         path: /Raid
         src: 10.10.0.56:/Raid
-        state: present
+        state: mounted
         fstype: nfs
 
     - name: Mounting Fast
       mount:
         path: /Fast
         src: 10.10.0.56:/Fast
-        state: present
+        state: mounted
         fstype: nfs
 
     - name: Create symlinks for Raid
@@ -51,11 +51,8 @@
       mount:
         path: /GPFS
         src: 10.10.0.62:/GPFS
-        state: present
+        state: mounted
         fstype: nfs
-
-    - name: Mount Everything
-      command: mount -a
 
     - name: Install repos
       yum: name=https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
