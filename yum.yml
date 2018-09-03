@@ -1,7 +1,7 @@
 ---
 - hosts: all
   tasks:
-      - name: Create directoy 3dd
+    - name: Create directoy 3dd
       file:
          path: /3dd
          state: directory
