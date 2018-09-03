@@ -72,4 +72,5 @@
         src: 10.10.0.62:/GPFS
         state: present
         fstype: nfs
-        when: ansible_hostname == "sp04*"
+        when: ansible_hostname == "sp049*"
+
