@@ -1,26 +1,7 @@
 ---
 - hosts: all
   tasks:
-    - name: Install repos
-      yum: name=https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-    - name: smrepo-centos
-      yum_repository:
-        name: smrepo-centos
-        description: smeshariki repo
-        gpgcheck: no
-        enabled: yes
-        baseurl: file:///3dd/Raid/backup_data/rnd/smrepo/7/x86_64/
-
-    - name: install packeges 1
-      yum: name=openssl098e,tzdata,tzdata-java,htop,openjpeg,libpng,mc,giflib,xorg-x11-fonts*,yum-plugin-versionlock,whowatch,sshpass,centos-release-scl-rh,ipmitool,lm_sensors,smartmontools,libXp,libXmu,libXi.x86_64,libXrandr,libXcursor,compat-libtiff3,libXft,libXinerama,OpenColorIO-tools
-      state: latest
-      update_cache: yes
-
-    - name: install packeges 2
-      yum: name=libreoffice,ImageMagick,firefox.x86_64,x11vnc,python2-pyside,pavucontrol,libstdc++-static,libstdc++-static.i686,dconf-editor,gimp,audiofile.i686,audiofile.x86_64,ntfs-3g,alsa-utils,alsa-tools,alsa-plugins-pulseaudio,nss.x86_64
-      state: latest
-      update_cache: yes
-    - name: Create directoy 3dd
+      - name: Create directoy 3dd
       file:
          path: /3dd
          state: directory
@@ -73,4 +54,25 @@
         state: present
         fstype: nfs
         when: ansible_hostname == "sp049*"
+
+    - name: Install repos
+      yum: name=https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+    - name: smrepo-centos
+      yum_repository:
+        name: smrepo-centos
+        description: smeshariki repo
+        gpgcheck: no
+        enabled: yes
+        baseurl: file:///3dd/Raid/backup_data/rnd/smrepo/7/x86_64/
+
+    - name: install packeges 1
+      yum: name=openssl098e,tzdata,tzdata-java,htop,openjpeg,libpng,mc,giflib,xorg-x11-fonts*,yum-plugin-versionlock,whowatch,sshpass,centos-release-scl-rh,ipmitool,lm_sensors,smartmontools,libXp,libXmu,libXi.x86_64,libXrandr,libXcursor,compat-libtiff3,libXft,libXinerama,OpenColorIO-tools
+      state: latest
+      update_cache: yes
+
+    - name: install packeges 2
+      yum: name=libreoffice,ImageMagick,firefox.x86_64,x11vnc,python2-pyside,pavucontrol,libstdc++-static,libstdc++-static.i686,dconf-editor,gimp,audiofile.i686,audiofile.x86_64,ntfs-3g,alsa-utils,alsa-tools,alsa-plugins-pulseaudio,nss.x86_64
+      state: latest
+      update_cache: yes
+
 
