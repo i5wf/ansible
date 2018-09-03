@@ -67,13 +67,13 @@
     - name: install packeges 1
       yum: name=openssl098e,tzdata,tzdata-java,htop,openjpeg,libpng,mc,giflib,xorg-x11-fonts*,yum-plugin-versionlock,whowatch,sshpass,centos-release-scl-rh,ipmitool,lm_sensors,smartmontools,libXp,libXmu,libXi.x86_64,libXrandr,libXcursor,compat-libtiff3,libXft,libXinerama,OpenColorIO-tools
       state: latest
-      skip_if_unavailable: yes
+      skip_broken: yes
       update_cache: yes
 
     - name: install packeges 2
       yum: name=libreoffice,ImageMagick,firefox.x86_64,x11vnc,python2-pyside,pavucontrol,libstdc++-static,libstdc++-static.i686,dconf-editor,gimp,audiofile.i686,audiofile.x86_64,ntfs-3g,alsa-utils,alsa-tools,alsa-plugins-pulseaudio,nss.x86_64
       state: latest
-      skip_if_unavailable: yes
+      skip_broken: yes
       update_cache: yes
 
 
