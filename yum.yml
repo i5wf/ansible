@@ -54,6 +54,8 @@
         state: present
         fstype: nfs
 
+    - name: Mount Everything
+        command: mount -a
 
     - name: Install repos
       yum: name=https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
