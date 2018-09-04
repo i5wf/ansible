@@ -15,21 +15,22 @@
 
     - name: license for maya2018
       copy:
-        src: 10.10.0.20:/var/opt/Autodesk/Adlm/ASR
+        src: \\10.10.0.20:/var/opt/Autodesk/Adlm/ASR
         dest: /var/opt/Autodesk/Adlm/ASR
         owner: root
         group: root
         mode: 0755
-
+        remote_src: yes
+        directory_mode: yes
     - name: license for maya2018_0.1
       copy:
-        src: 10.10.0.20:/var/opt/Autodesk/Adlm/.config
+        src: \\10.10.0.20:/var/opt/Autodesk/Adlm/.config
         dest: /var/opt/Autodesk/Adlm/.config
         owner: root
         group: root
         mode: 0755
-
-
+        remote_src: yes
+        directory_mode: yes
 #  tasks:
 #    - name: Copy license file to client
 #      copy: src 10.10.0.20:/var/opt/Autodesk/Adlm/ASR dest=/var/opt/Autodesk/Adlm/ASR
