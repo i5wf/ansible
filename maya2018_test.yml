@@ -15,18 +15,19 @@
 
     - name: license for maya2018
       copy:
-        src: /var/opt/Autodesk/Adlm/ASR
-        dest: /var/opt/Autodesk/Adlm/ASR
+        src: /3dd/Raid/Kollection/Soft/tools/Adlm
+        dest: /var/opt/Autodesk/
         owner: root
         group: root
         mode: 0755
         directory_mode: yes
-
-    - name: license for maya2018_0.1
-      copy:
-        src: /var/opt/Autodesk/Adlm/.config
-        dest: /var/opt/Autodesk/Adlm/.config
-        owner: root
-        group: root
-        mode: 0755
-        directory_mode: yes
+        remote_src: yes
+    #- name: license for maya2018_0.1
+      #copy:
+      #  src: 
+      #  dest: /var/opt/Autodesk/Adlm/.config
+      #  owner: root
+      #  group: root
+      #  mode: 0755
+      #  directory_mode: yes
+      #  remote_src: yes
