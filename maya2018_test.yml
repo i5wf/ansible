@@ -14,7 +14,7 @@
       state: latest
 
     - name: license for maya2018
-      copy:
+      synchronize:
         src: /3dd/Raid/Kollection/Soft/tools/Adlm
         dest: /var/opt/Autodesk/
         owner: root
