@@ -19,7 +19,7 @@
         dest: /var/opt/Autodesk/.config/
         owner: root
         group: root
-        mode: 0755
+        mode: 0644
         remote_src: yes
     #- name: license for maya2018_0.1
       #copy:
