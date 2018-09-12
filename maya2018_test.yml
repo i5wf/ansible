@@ -14,13 +14,13 @@
       state: latest
 
     - name: license for maya2018
-      copy:
+    - synchronize:
         src: /3dd/Raid/Kollection/Soft/tools/Adlm/
         dest: /var/opt/Autodesk/
-        owner: root
-        group: root
-        mode: 0755
-        remote_src: yes
+       # owner: root
+       # group: root
+       # mode: 0755
+       # remote_src: yes
     #- name: license for maya2018_0.1
       #copy:
       #  src: 
