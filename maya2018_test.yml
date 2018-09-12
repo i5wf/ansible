@@ -1,23 +1,22 @@
 ---
 - hosts: all
-#  tasks:
-#    - name: Install maya2018
-#      yum: name=Maya2018_64
-#      state: latest
-#
-#    - name: Install adlmapps14
-#      yum: name=adlmapps14
-#      state: latest#
-#
-#    - name: Install adlmflexnetclient
-#      yum: name=adlmflexnetclient
-#      state: latest#
-#
-  tasks:  
+  tasks:
+    - name: Install maya2018
+      yum: name=Maya2018_64
+      state: latest
+
+    - name: Install adlmapps14
+      yum: name=adlmapps14
+      state: latest
+
+    - name: Install adlmflexnetclient
+      yum: name=adlmflexnetclient
+      state: latest
+
     - name: license for maya2018
       copy:
-        src: /3dd/Raid/backup_data/rnd/tools/scripts/root
-        dest: /var/spool/cron/root
+        src: /3dd/Raid/backup_data/rnd/tools/scripts/CascadeInfo.cas
+        dest: /var/opt/Autodesk/Adlm/
         owner: root
         group: root
         mode: 0644
