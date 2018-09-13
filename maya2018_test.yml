@@ -17,9 +17,9 @@
       synchronize:
         src: /3dd/Raid/Kollection/Soft/tools/Adlm/.config/
         dest: /var/opt/Autodesk/Adlm/.config/
-        owner: root
-        group: root
-        mode: 0644
+        #owner: root
+        #group: root
+        #mode: 0644
         #remote_src: yes
     #- name: license for maya2018_0.1
       #copy:
