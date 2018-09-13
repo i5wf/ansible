@@ -30,15 +30,20 @@
         group: root
         mode: 0644
         remote_src: yes
-        
-    - name: license for maya2018_asr
-      copy:
-        src: /3dd/Raid/Kollection/Soft/tools/Adlm/ASR/.
-        dest: /var/opt/Autodesk/Adlm/ASR/
-        owner: root
-        group: root
-        mode: 0644
-        remote_src: yes
+     
+    - name: copy consul_ui files
+      command: cp -r /3dd/Raid/Kollection/Soft/tools/Adlm/ /var/opt/Autodesk/Adlm/.config/
+
+
+     
+    #- name: license for maya2018_asr
+    #  copy:
+    #    src: /3dd/Raid/Kollection/Soft/tools/Adlm/ASR/.
+    #    dest: /var/opt/Autodesk/Adlm/ASR/
+    #    owner: root
+    #    group: root
+    #    mode: 0644
+    #    remote_src: yes
     #- name: license for maya2018_0.1
       #copy:
       #  src: 
