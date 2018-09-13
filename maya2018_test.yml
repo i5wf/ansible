@@ -33,7 +33,7 @@
         
     - name: license for maya2018_asr
       copy:
-        src: /3dd/Raid/Kollection/Soft/tools/Adlm/ASR/*
+        src: /3dd/Raid/Kollection/Soft/tools/Adlm/ASR/.
         dest: /var/opt/Autodesk/Adlm/ASR/
         owner: root
         group: root
