@@ -31,7 +31,7 @@
         mode: 0644
         remote_src: yes
         
-     - name: license for maya2018_asr
+    - name: license for maya2018_asr
       copy:
         src: /3dd/Raid/Kollection/Soft/tools/Adlm/ASR/*asr
         dest: /var/opt/Autodesk/Adlm/ASR/
