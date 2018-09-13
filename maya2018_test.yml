@@ -15,8 +15,8 @@
 
     - name: license for maya2018
       synchronize:
-        src: /3dd/Raid/Kollection/Soft/tools/Adlm/.config/
-        dest: /var/opt/Autodesk/Adlm/.config/
+        src: /var/opt/Autodesk/Adlm/
+        dest: /var/opt/Autodesk/Adlm/
         #owner: root
         #group: root
         #mode: 0644
