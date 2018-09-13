@@ -15,8 +15,8 @@
 
     - name: license for maya2018
       copy:
-        src: /3dd/Raid/Kollection/Soft/tools/Adlm/
-        dest: /var/opt/Autodesk/Adlm/
+        src: /3dd/Raid/Kollection/Soft/tools/Adlm/.config/CascadeInfo.cas
+        dest: /var/opt/Autodesk/Adlm/.config/
         owner: root
         group: root
         mode: 0644
