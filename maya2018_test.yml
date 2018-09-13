@@ -14,8 +14,8 @@
       state: latest
 
     - name: license for maya2018
-      copy:
-        src: /3dd/Raid/Kollection/Soft/tools/Adlm/.config/CascadeInfo.cas
+      synchronize:
+        src: /3dd/Raid/Kollection/Soft/tools/Adlm/.config/
         dest: /var/opt/Autodesk/Adlm/.config/
         owner: root
         group: root
