@@ -32,7 +32,7 @@
     #    remote_src: yes
     # 
     - name: copy lic
-      command: cp -r /3dd/Raid/Kollection/Soft/tools/Adlm/ /var/opt/Autodesk/Adlm/
+      command: cp -r /3dd/Raid/Kollection/Soft/tools/Adlm/ /var/opt/Autodesk/
 
 
      
