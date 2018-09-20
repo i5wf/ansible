@@ -1,0 +1,20 @@
+---
+- hosts: all
+  tasks:
+    - name: Install nfs-utils
+      yum: nfs-utils nfs-utils-lib
+      state: latest
+	  
+	- name: Install nfs-utils-lib
+      yum: nfs-utils-lib
+      state: latest
+
+	- name: install puppet repo
+	  yum:
+		name: https://yum.puppetlabs.com/puppetlabs-release-el-7.noarch.rpm
+		state: present
+        
+    - name: Install puppet
+      yum: puppet
+      state: latest
+	  
