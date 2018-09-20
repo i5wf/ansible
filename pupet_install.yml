@@ -5,14 +5,14 @@
       yum: name=nfs-utils 
       state: latest
 
-	- name: Install nfs-utils-lib
+    - name: Install nfs-utils-lib
       yum: name=nfs-utils-lib
       state: latest
 
-	- name: install puppet repo
-	  yum:
-		name: https://yum.puppetlabs.com/puppetlabs-release-el-7.noarch.rpm
-		state: present
+    - name: install puppet repo
+      yum:
+        name: https://yum.puppetlabs.com/puppetlabs-release-el-7.noarch.rpm
+        state: present
         
     - name: Install puppet
       yum: puppet
