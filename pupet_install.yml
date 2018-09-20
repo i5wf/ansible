@@ -4,7 +4,7 @@
     - name: Install nfs-utils
       yum: nfs-utils nfs-utils-lib
       state: latest
-	  
+
 	- name: Install nfs-utils-lib
       yum: nfs-utils-lib
       state: latest
