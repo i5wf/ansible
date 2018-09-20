@@ -2,11 +2,11 @@
 - hosts: all
   tasks:
     - name: Install nfs-utils
-      yum: nfs-utils nfs-utils-lib
+      yum: name=nfs-utils 
       state: latest
 
 	- name: Install nfs-utils-lib
-      yum: nfs-utils-lib
+      yum: name=nfs-utils-lib
       state: latest
 
 	- name: install puppet repo
