@@ -15,5 +15,5 @@
         state: present
         
     - name: Install puppet
-      yum:name=puppet
+      yum: name=puppet
       state: latest
