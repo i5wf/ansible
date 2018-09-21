@@ -3,3 +3,6 @@
   tasks:
     - name: puppet enable auto start
       command: systemctl enable puppet
+      
+    - name: nuke_install
+      command: nuke_install
