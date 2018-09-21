@@ -4,5 +4,5 @@
     - name: puppet enable auto start
       command: systemctl enable puppet
       
-    - name: nuke_install
-      command: nuke_install
+    - name: maya2016_install
+      command: maya2016_install
