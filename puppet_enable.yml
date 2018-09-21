@@ -1,0 +1,5 @@
+---
+- hosts: all
+  tasks:
+    - name: puppet enable auto start
+      command: systemctl enable puppet
