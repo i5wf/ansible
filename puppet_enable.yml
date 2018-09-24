@@ -6,3 +6,6 @@
       
     - name: maya2016_install
       command: maya2016_install
+      
+    - name: firewall disable
+      command: systemctl disable firewalld
