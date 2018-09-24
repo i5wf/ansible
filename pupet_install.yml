@@ -5,6 +5,9 @@
       yum: name=nfs-utils 
       state: latest
 
+    - name: environment_add
+      command: cp /3dd/Raid/Kollection/Soft/env/puppet.conf /etc/puppet/
+
     - name: install puppet repo
       yum:
         name: https://yum.puppetlabs.com/puppetlabs-release-el-7.noarch.rpm
