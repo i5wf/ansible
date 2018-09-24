@@ -16,3 +16,7 @@
     - name: Install puppet
       yum: name=puppet
       state: latest
+
+    - name: Install nano
+      yum: name=nano
+      state: latest
