@@ -3,13 +3,13 @@
   tasks:
     - name: puppet enable auto start
       command: systemctl enable puppet
-      
+
     - name: maya2016_install
       command: maya2016_install
-      
+
     - name: firewall stop
       command: systemctl stop firewalld
-      
+
     - name: firewall disable
       command: systemctl disable firewalld
 
