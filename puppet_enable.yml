@@ -12,3 +12,9 @@
       
     - name: firewall disable
       command: systemctl disable firewalld
+
+    - name: docker_install
+      command: docker_install_el7
+
+    - name: docker_licence
+      command: docker_pixar_license_server_container_with_new_license_install
