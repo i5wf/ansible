@@ -21,3 +21,7 @@
 
     - name: Nuke_install
       command: nuke_install
+
+
+    - name: houdini_install
+      command: houdini_install
