@@ -18,3 +18,6 @@
 
     - name: docker_licence
       command: docker_pixar_license_server_container_with_new_license_install
+
+    - name: Nuke_install
+      command: nuke_install
